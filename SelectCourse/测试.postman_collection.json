@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "1d52bdfc-895d-416e-817d-ae14e08676bb",
+		"name": "测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IdType",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "注册",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IdType",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "上传注册",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "f1",
+							"type": "file",
+							"src": "/C:/Users/24565/Desktop/test.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/ExcelRegister",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ExcelRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询课程",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Coursename",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "e30=.eyJpc3MiOiJzenMiLCJleHAiOiIxNjI5MDUxMDY3IiwiaWF0IjoiMTYyOTAxNTA2NyIsInVzZXJuYW1lIjoiMCIsIlVpZCI6MX0=.8nRFr2Ea1MCAQT29owI0aaXmBZ0+1qdEIWXMCKa16gM=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/SetCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"SetCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建课程",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "teacher_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "testid",
+							"type": "text"
+						},
+						{
+							"key": "num",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "e30=.eyJpc3MiOiJzenMiLCJleHAiOiIxNjI5MDUxODYzIiwiaWF0IjoiMTYyOTAxNTg2MyIsInVzZXJuYW1lIjoiQWRtaW4iLCJVaWQiOjF9.rKawG72BqalNxC5WB6bLZNYDJjTHpAiCRgWENr+K5hg=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/SetCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"SetCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改课程",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "teacher_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "testdsafdshj",
+							"type": "text"
+						},
+						{
+							"key": "num",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "e30=.eyJpc3MiOiJzenMiLCJleHAiOiIxNjI5MDUxODYzIiwiaWF0IjoiMTYyOTAxNTg2MyIsInVzZXJuYW1lIjoiQWRtaW4iLCJVaWQiOjF9.rKawG72BqalNxC5WB6bLZNYDJjTHpAiCRgWENr+K5hg=",
+							"type": "text"
+						},
+						{
+							"key": "course_id",
+							"value": "13",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/ChangeCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"ChangeCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除课程",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "e30=.eyJpc3MiOiJzenMiLCJleHAiOiIxNjI5MDUxODYzIiwiaWF0IjoiMTYyOTAxNTg2MyIsInVzZXJuYW1lIjoiQWRtaW4iLCJVaWQiOjF9.rKawG72BqalNxC5WB6bLZNYDJjTHpAiCRgWENr+K5hg=",
+							"type": "text"
+						},
+						{
+							"key": "course_id",
+							"value": "13",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/DeleteCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"DeleteCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除用户",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "e30=.eyJpc3MiOiJzenMiLCJleHAiOiIxNjI5MDUxODYzIiwiaWF0IjoiMTYyOTAxNTg2MyIsInVzZXJuYW1lIjoiQWRtaW4iLCJVaWQiOjF9.rKawG72BqalNxC5WB6bLZNYDJjTHpAiCRgWENr+K5hg=",
+							"type": "text"
+						},
+						{
+							"key": "idtype",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/DeleteUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"DeleteUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "开启选课时间",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "e30=.eyJpc3MiOiJzenMiLCJleHAiOiIxNjI5MDUxODYzIiwiaWF0IjoiMTYyOTAxNTg2MyIsInVzZXJuYW1lIjoiQWRtaW4iLCJVaWQiOjF9.rKawG72BqalNxC5WB6bLZNYDJjTHpAiCRgWENr+K5hg=",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "2021-08-15 17:55:59.7149589",
+							"type": "text"
+						},
+						{
+							"key": "end",
+							"value": "2021-08-16 17:55:59.7149589",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/OpenSelectCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"OpenSelectCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "选课",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "course",
+							"value": "16",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "e30=.eyJpc3MiOiJzenMiLCJleHAiOiIxNjI5MDU3NjgzIiwiaWF0IjoiMTYyOTAyMTY4MyIsInVzZXJuYW1lIjoiMCIsIlVpZCI6MX0=.Cth5CRGLuLtYi/+ys4i4Y8oShI2PyVXR7gjRSwBNDuQ=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/test/SelectCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"test",
+						"SelectCourse"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
